@@ -1,0 +1,22 @@
+# Aplayerx
+Aplayer,几乎可以播放所有格式类型的视频
+
+public class MainActivity extends AppCompatActivity {
+
+    private Aplayer aplayer;
+    private EditText editText;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        editText = findViewById(R.id.editText);
+        editText.setText("http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4");
+        aplayer = new Aplayer("",this,"加载中...");
+
+    }
+
+    public void playVideo(View view){
+        aplayer.start("测试标题",editText.getText().toString().trim());
+    }
+}
