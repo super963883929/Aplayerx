@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AplayerActivity">
+    <SurfaceView
+        android:id="@+id/holderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <android.widget.ImageView
+        android:id="@+id/v_play_thumb"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/v_playbar_top">
+
+        <android.widget.ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/v_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/v_playbar_back"
+            android:tint="@android:color/white" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/v_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="start|center"
+            android:maxLines="1"
+            android:paddingTop="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="REMINIS MINI PLAYER"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:paddingEnd="5dp" />
+
+        <android.widget.ImageView
+            android:layout_gravity="end"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/img_more"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_tv_24"
+            android:tint="@android:color/white" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/item_preparing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ctrl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/v_palybar_bottom"
+        android:orientation="horizontal">
+        <android.widget.ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/v_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:scaleType="centerInside"
+            android:src="@drawable/v_play_arrow"
+            android:tint="@android:color/white" />
+        <TextView
+            android:id="@+id/tv_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:maxHeight="3dp"
+            android:minHeight="3dp"
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:progressDrawable="@drawable/bd_seekbar_holo_light"
+            android:thumb="@drawable/v_thumb"
+            android:thumbOffset="0dip" />
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:text="00:00"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+        <android.widget.ImageView
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/v_rotate"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/v_screen_full"
+            android:tint="@android:color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="音量:50%"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <android.widget.ImageView
+        android:clickable="true"
+        android:focusable="true"
+        android:adjustViewBounds="true"
+        android:id="@+id/v_play_large"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerInside"
+        android:alpha="0.7"
+        android:background="@null"
+        android:src="@drawable/v_play_large"
+        android:tint="@android:color/white" />
+
+
+    <android.widget.ImageView
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/v_player_lock"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="start|center"
+        android:scaleType="centerInside"
+        android:src="@drawable/v_player_unlocked"
+        android:tint="@android:color/white" />
+</FrameLayout>

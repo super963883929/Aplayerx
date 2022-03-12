@@ -1,0 +1,73 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        ndk{ //加载so文件
+            abiFilters "armeabi-v7a"
+        }
+    }
+    sourceSets {   //加载so文件
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/beans.xml'
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')//加载so库
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation files('libs\\aplayer.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+
+
+    /**投屏依赖 https://github.com/yanbo469/VideoDlnaScreen */
+    /***
+     * public class Application {*
+     * @Override
+     *     public void onCreate() {
+     *         super.onCreate();
+     * 	    //初始化
+     *       VApplication.init(this);
+     *     }
+     * }
+     * 需要在Application 初始化
+     */
+    //compileOnly 'javax.enterprise:cdi-api:2.0'
+    //implementation 'com.github.yanbo469:VideoDlnaScreen:v1.0'  //由于需要在在Application初始化,所以就在app里面添加依赖
+
+}
