@@ -1,5 +1,5 @@
 # Aplayerx
-Aplayer,几乎可以播放所有格式类型的视频
+Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
 
 导入之后要记得在build.gradle(:app)里面加载so文件
 
