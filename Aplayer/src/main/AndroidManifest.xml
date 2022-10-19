@@ -9,6 +9,7 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Aplayer播放器"
             android:launchMode="singleTop"
+
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
 
             >

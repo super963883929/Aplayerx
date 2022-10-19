@@ -5,8 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 
 public class AplayerConfig {
-    public AplayerConfig(Context context, String cookie, String loadingText, String title, String url) {
 
+
+    public AplayerConfig(Context context, String cookie, String loadingText, String title, String url) {
         this.context = context;
         this.cookie = cookie;
         this.loadingText = loadingText;

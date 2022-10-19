@@ -5,10 +5,6 @@ import android.os.Handler;
 import android.os.Message;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
-import java.util.Map;
-import java.util.concurrent.Executor;
 
 /**
  * Aplayer播放器
@@ -18,7 +14,7 @@ public class Aplayer {
 
     private final Context context;
 
-    static Handler fanhui = null;
+    static Handler handler = null;
 
     private String loadingText = "正在打开视频,请稍候...";
     private AplayerConfig aplayerConfig;
@@ -27,7 +23,7 @@ public class Aplayer {
         this.cookie = cookie;
         this.loadingText = loadingText;
         this.context = context;
-        fanhui = new Handler(new Handler.Callback() {
+        handler = new Handler(new Handler.Callback() {
             @Override
             public boolean handleMessage(@NonNull Message msg) {
                 Aplayer.this.playFinish(msg.what);
@@ -43,7 +39,7 @@ public class Aplayer {
      * @param url
      */
     public void start(String title, String url) {
-        AplayerActivity.fanhui = fanhui;
+        AplayerActivity.fanhui = handler;
 
         if (this.cookie != null && context!=null) {
             AplayerConfig aplayerConfig = new AplayerConfig(context,cookie,loadingText,title,url);
