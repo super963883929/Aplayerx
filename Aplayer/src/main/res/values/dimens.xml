@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ctl_layout_padding">10dp</dimen>
+    <dimen name="ctl_layout_margin">5dp</dimen>
+    <dimen name="ctl_title_font_size">16sp</dimen>
+    <dimen name="ctl_subtitle_font_size">16sp</dimen>
+
+    <dimen name="ctl_seek_font_size">14sp</dimen>
+    <dimen name="ctl_seek_thumb_size">8dp</dimen>
+    <dimen name="ctl_seek_radius">1dp</dimen>
+    <dimen name="ctl_seek_height">2dp</dimen>
+
+    <dimen name="option_size_big">50dp</dimen>
+    <dimen name="option_padding">10dp</dimen>
+    <dimen name="options_radius_bg">6dp</dimen>
+
+    <dimen name="option_font_size">15sp</dimen>
+    <dimen name="option_size">27dp</dimen>
+    <dimen name="option_margin_small">10dp</dimen>
+    <dimen name="option_margin">15dp</dimen>
+    <dimen name="option_margin_big">30dp</dimen>
+
+    <dimen name="ctl_battery_width">25dp</dimen>
+    <dimen name="ctl_battery_height">12dp</dimen>
+    <dimen name="ctl_battery_radius">1dp</dimen>
+    <dimen name="ctl_battery_padding">3.1dp</dimen>
+    <dimen name="ctl_battery_padding_small">2.8dp</dimen>
+    <dimen name="ctl_battery_padding_big">4.1dp</dimen>
+    <dimen name="ctl_battery_progress_height">5dp</dimen>
+
+    <dimen name="ctl_system_time_font_size">9sp</dimen>
+
+    <dimen name="ctl_connect_type_radius_bg">7dp</dimen>
+    <dimen name="ctl_connect_type_padding_hr">5dp</dimen>
+    <dimen name="ctl_connect_stroke_width">1dp</dimen>
+
+    <dimen name="vl_progress_width">100dp</dimen>
+    <dimen name="seek_padding_w">10dp</dimen>
+    <dimen name="seek_padding_h">5dp</dimen>
+    <dimen name="seek_flag_padding">1dp</dimen>
+    <dimen name="seek_font_size">15sp</dimen>
+    <dimen name="seek_img_width">20dp</dimen>
+
+    <dimen name="loading_size">35dp</dimen>
+    <dimen name="loading_margin">15dp</dimen>
+    <dimen name="loading_font_size">15sp</dimen>
+
+</resources>

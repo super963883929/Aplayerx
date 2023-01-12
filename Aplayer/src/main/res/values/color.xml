@@ -2,4 +2,21 @@
 <resources>
     <color name="main">#D81B60</color>
 
+
+    <color name="ctl_transparent">#00000000</color>
+    <color name="ctl_bg">#000000</color>
+    <color name="ctl_bg_alpha">#cc000000</color>
+    <color name="ctl_font">#ffffff</color>
+    <color name="ctl_font_alpha">#bbffffff</color>
+    <color name="ctl_option">#ffffff</color>
+    <color name="ctl_option_alpha">#80ffffff</color>
+    <color name="ctl_option_bg">#50000000</color>
+    <color name="ctl_option_bg_alpha">#20000000</color>
+    <color name="ctl_seek_thumb">#faffffff</color>
+    <color name="ctl_seek_bg">#88808080</color>
+    <color name="ctl_seek_sp">#80bbbbbb</color>
+    <color name="ctl_battery">#ffffff</color>
+    <color name="ctl_battery_low">#f00000</color>
+    <color name="ctl_connect_type_bg">#50ffffff</color>
+    <color name="ctl_fore">#71C49F</color>
 </resources>

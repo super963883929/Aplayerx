@@ -5,13 +5,13 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application>
-        <activity android:name=".AplayerActivity"
+
+        <activity android:name=".APlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="Aplayer播放器"
             android:launchMode="singleTop"
-
-            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
-
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeFullScreen"
             >
 
         </activity>

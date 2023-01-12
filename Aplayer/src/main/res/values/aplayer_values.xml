@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="ctl_move_duration">200</integer>
+    <integer name="ctl_controller_angle_bg">90</integer>
+</resources>

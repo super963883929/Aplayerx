@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".AplayerActivity">
+    tools:context=".APlayerActivity">
     <SurfaceView
         android:id="@+id/holderView"
         android:layout_width="match_parent"
@@ -83,13 +83,13 @@
         android:layout_gravity="bottom"
         android:background="@drawable/v_palybar_bottom"
         android:orientation="horizontal">
+
         <android.widget.ImageView
             android:clickable="true"
             android:focusable="true"
             android:id="@+id/v_play"
             android:layout_width="50dp"
             android:layout_height="50dp"
-
             android:scaleType="centerInside"
             android:src="@drawable/v_play_arrow"
             android:tint="@android:color/white" />
@@ -130,6 +130,37 @@
             android:text="00:00"
             android:textColor="#FFFFFF"
             android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="倍速"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvFrames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="end|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="画面"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+
         <android.widget.ImageView
             android:clickable="true"
             android:focusable="true"
@@ -142,6 +173,9 @@
     </LinearLayout>
 
     <TextView
+        android:visibility="gone"
+        android:padding="10dp"
+        android:background="@drawable/aplayer_selector_option_bg"
         android:id="@+id/tv_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -150,7 +184,9 @@
         android:textColor="@android:color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:visibility="gone" />
+       />
+
+
 
     <android.widget.ImageView
         android:clickable="true"
