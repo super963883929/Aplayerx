@@ -1,8 +1,6 @@
 package com.tools.aplayer.model;
 
-/**
- * Created by admin on 2016/7/14.
- */
+
 public class PopWndOptionsIteamParam
 {
     private boolean mIsSelected;

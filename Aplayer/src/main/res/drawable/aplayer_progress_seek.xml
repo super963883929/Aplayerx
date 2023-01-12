@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/ctl_seek_radius" />
+            <solid android:color="@color/ctl_seek_bg"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/ctl_seek_radius"/>
+                <solid android:color="@color/ctl_seek_sp"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:scaleGravity="left" android:scaleWidth="100%" >
+            <shape>
+                <corners android:radius="@dimen/ctl_seek_radius"/>
+                <solid android:color="?colorPrimary"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>

@@ -3,9 +3,6 @@ package com.tools.aplayer.utils;
 
 import com.tools.aplayer.model.Content;
 
-/**
- * Created by admin on 2016/7/14.
- */
 public class BoolUtil {
 
     private static final String ERROR_TAG = Content.APLAYER_DEMO_LOG_PREF_TAG + BoolUtil.class.getSimpleName();

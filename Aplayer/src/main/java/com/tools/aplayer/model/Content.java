@@ -2,9 +2,7 @@ package com.tools.aplayer.model;
 
 import android.os.Environment;
 
-/**
- * Created by admin on 2016/7/11.
- */
+
 public class Content {
     public static final int    APLYER_SUCCESS = 0;
     public static final int    CONFIG_SUCCESS = 1;

@@ -3,9 +3,7 @@ package com.tools.aplayer.model;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by admin on 2016/7/14.
- */
+
 public class PopWndOptionsCategory {
     private String categoryTitle;
     private List<PopWndOptionsIteamParam> mIteamList;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="@dimen/ctl_battery_radius"/>
+                <solid android:color="@color/ctl_battery_low"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:scaleGravity="left" android:scaleWidth="100%" >
+            <shape>
+                <corners android:radius="@dimen/ctl_battery_radius"/>
+                <solid android:color="@color/ctl_battery"/>
+            </shape>
+        </scale>
+    </item>
+</layer-list>
+

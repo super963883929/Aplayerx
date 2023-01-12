@@ -1,14 +1,12 @@
 package com.tools.aplayer.model;
 
 import com.aplayer.APlayerAndroid;
-import com.tools.aplayer.play_interface.IConfigAudio;
-import com.tools.aplayer.play_interface.IConfigSubtitle;
-import com.tools.aplayer.play_interface.IConfigVideo;
-import com.tools.aplayer.play_interface.IRecord;
+import com.tools.aplayer.playInterface.IConfigAudio;
+import com.tools.aplayer.playInterface.IConfigSubtitle;
+import com.tools.aplayer.playInterface.IConfigVideo;
+import com.tools.aplayer.playInterface.IRecord;
 
-/**
- * Created by admin on 2016/7/14.
- */
+
 public class PlayConfig {
     public static class PlayerListener {
         public APlayerAndroid.OnPlayCompleteListener playCompleteListener;

@@ -8,9 +8,7 @@ import android.widget.FrameLayout;
 import com.tools.aplayer.model.Content;
 
 
-/**
- * Created by admin on 2016/7/26.
- */
+
 public class DisplayAreaSetUtil {
 
     private static final String ERROR_TAGE = Content.APLAYER_DEMO_LOG_PREF_TAG + DisplayAreaSetUtil.class.getSimpleName();

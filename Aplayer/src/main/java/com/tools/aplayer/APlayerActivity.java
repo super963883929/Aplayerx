@@ -5,7 +5,6 @@ import static android.view.View.VISIBLE;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
@@ -30,17 +29,15 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.aplayer.APlayerAndroid;
 import com.tools.aplayer.model.PlayConfig;
-import com.tools.aplayer.play_implement.ConfigAudio;
-import com.tools.aplayer.play_implement.ConfigSubtitle;
-import com.tools.aplayer.play_implement.ConfigVideo;
-import com.tools.aplayer.play_implement.Record;
-import com.tools.aplayer.play_interface.IConfigVideo;
+import com.tools.aplayer.playImplement.ConfigAudio;
+import com.tools.aplayer.playImplement.ConfigSubtitle;
+import com.tools.aplayer.playImplement.ConfigVideo;
+import com.tools.aplayer.playImplement.Record;
+import com.tools.aplayer.playInterface.IConfigVideo;
 import com.tools.aplayer.utils.PositionManager;
 import com.tools.aplayer.widget.PlayerMenuDialog;
 

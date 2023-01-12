@@ -6,9 +6,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.widget.ListView;
 
-/**
- * Created by admin on 2016/7/13.
- */
+
 public class MyListView extends ListView{
 
     public MyListView(Context context) {

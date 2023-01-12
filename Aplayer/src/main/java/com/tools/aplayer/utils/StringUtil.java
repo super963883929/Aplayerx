@@ -9,9 +9,6 @@ import android.os.Build;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
-/**
- * Created by admin on 2016/7/20.
- */
 public class StringUtil {
 
     public static long StringToLong(String str)

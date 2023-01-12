@@ -4,9 +4,7 @@ import android.content.Context;
 import android.util.DisplayMetrics;
 import android.view.WindowManager;
 
-/**
- * Created by admin on 2016/7/26.
- */
+
 public class UIUtil {
 
     public static class Size
