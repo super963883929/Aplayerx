@@ -14,7 +14,7 @@ Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
 //------------------------------------------------------------
 
     public class MainActivity extends AppCompatActivity {
-        private Aplayer aplayer;
+     
         private EditText editText;
 
         @Override
@@ -23,11 +23,28 @@ Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
             setContentView(R.layout.activity_main);
             editText = findViewById(R.id.editText);
             editText.setText("http://vfx.mtime.cn/Video/2019/03/18/mp4/190318231014076505.mp4");
-            aplayer = new Aplayer("",this,"加载中...");
-        }
+           
+            //回调
+             APlayerActivity.setOnPlayerCallBack(new OnPlayerCallBack() {
+                @Override
+                public void onFinish() {
+                   
+                }
 
+                @Override
+                public void onPause() {
+
+                }
+
+                @Override
+                public void onStart() {
+
+                }
+            });
+        }
+        //调用
         public void playVideo(View view){
-            aplayer.start("测试标题",editText.getText().toString().trim());
+             APlayerActivity.playVideo(this,"测试标题",editText.getText().toString().trim(),false,0)
         }
     }
 
