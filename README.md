@@ -32,10 +32,10 @@ Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
 
 
 混淆问题: 注意不要混淆了
-//----------------------------------------------
-#Aplayer
--keep class com.tools.aplayer* { *; }
--keep class com.aplayer.* { *; }
--keep class com.example.* { *; }
+
+    #Aplayer
+    -keep class com.tools.aplayer* { *; }
+    -keep class com.aplayer.* { *; }
+    -keep class com.example.* { *; }
 
 ![This is an image](https://raw.githubusercontent.com/super963883929/Aplayerx/master/img_test.jpg)
