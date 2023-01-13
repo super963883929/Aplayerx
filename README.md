@@ -7,6 +7,7 @@ Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
             ....
         ndk{ //加载so文件
             abiFilters "armeabi-v7a"
+            // abiFilters 'arm64-v8a' //64位系统请用 arm64-v8a
         }
     }
 
