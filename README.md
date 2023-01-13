@@ -55,5 +55,10 @@ Aplayer播放器,视频播放器,几乎可以播放所有格式类型的视频
     -keep class com.tools.aplayer* { *; }
     -keep class com.aplayer.* { *; }
     -keep class com.example.* { *; }
+    
 
 ![This is an image](https://raw.githubusercontent.com/super963883929/Aplayerx/master/img_test.jpg)
+
+
+apk下载
+![This is an ulr](https://github.com/super963883929/Aplayerx/blob/06c7cd5c32b97eb5f6ef15eedd0b198b97eb3cc7/app-debug.apk)
